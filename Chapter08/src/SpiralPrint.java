@@ -5,8 +5,6 @@ public class SpiralPrint {
 
         spiralOrderPrint(matrix);
 
-        System.out.println("------------------------------------");
-
         int[][] matrix1 = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
 
         spiralOrderPrint(matrix1);
@@ -22,6 +20,8 @@ public class SpiralPrint {
         while (tR <= dR && tC <= dC){
             printEdge(matrix,tR++,tC++,dR--,dC--);
         }
+
+        System.out.println(" ");
     }
 
 
